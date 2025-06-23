@@ -7,14 +7,29 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col h-full">
-      <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-        <span className="text-blue-500">🎮</span>
-        {project.projectTitle}
-      </h3>
-      <p className="text-gray-600 mb-2">{project.studentName}</p>
-      <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
-      <div className="flex flex-col gap-2">
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col h-full">
+      {project.thumbnail && (
+        <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+          <img 
+            src={project.thumbnail} 
+            alt={project.projectTitle}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.parentElement!.innerHTML = '<span class="text-6xl">🎮</span>';
+            }}
+          />
+        </div>
+      )}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold mb-2">
+          {project.projectTitle}
+        </h3>
+        <p className="text-gray-600 mb-2">{project.studentName}</p>
+        {project.description && (
+          <p className="text-gray-700 mb-4 flex-grow line-clamp-3">{project.description}</p>
+        )}
+        <div className="flex flex-col gap-2 mt-auto">
         {project.unityroomUrl && (
           <a
             href={project.unityroomUrl}
@@ -43,6 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         >
           GitHub
         </a>
+        </div>
       </div>
     </div>
   );

@@ -7,5 +7,4 @@ export interface Project {
   githubReleaseUrl?: string;
   githubUrl: string;
   thumbnail?: string;
-  tags?: string[];
 }
