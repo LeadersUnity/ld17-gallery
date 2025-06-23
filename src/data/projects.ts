@@ -49,7 +49,7 @@ export const projects: Project[] = [
   {
     id: '6',
     studentName: 'やまゆ',
-    projectTitle: 'やまゆの作品',
+    projectTitle: 'VOICE TWIST',
     description: '',
     githubReleaseUrl: 'https://github.com/LeadersUnity/original_yamayu/releases',
     githubUrl: 'https://github.com/LeadersUnity/original_yamayu',
