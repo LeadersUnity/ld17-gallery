@@ -8,8 +8,8 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col h-full">
-      {project.thumbnail && (
-        <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+        {project.thumbnail ? (
           <img 
             src={project.thumbnail} 
             alt={project.projectTitle}
@@ -19,8 +19,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               e.currentTarget.parentElement!.innerHTML = '<span class="text-6xl">🎮</span>';
             }}
           />
-        </div>
-      )}
+        ) : (
+          <span className="text-6xl">🎮</span>
+        )}
+      </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold mb-2">
           {project.projectTitle}
