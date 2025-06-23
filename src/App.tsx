@@ -21,8 +21,8 @@ function App() {
   }, [searchTerm]);
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-gray-50">
+      <div className="container mx-auto px-4 py-8 max-w-7xl">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             研修生Unity作品ギャラリー
@@ -34,7 +34,7 @@ function App() {
 
         <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
 
-        <div className="mb-4">
+        <div className="mb-6 text-center">
           <p className="text-gray-600">
             表示中: {filteredProjects.length} / {projects.length} 作品
           </p>
