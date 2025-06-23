@@ -24,12 +24,9 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            研修生Unity作品ギャラリー
+          <h1 className="text-4xl font-bold text-gray-800">
+            17期Unity作品集
           </h1>
-          <p className="text-lg text-gray-600">
-            研修生が制作したUnityゲームの作品集です
-          </p>
         </header>
 
         <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />

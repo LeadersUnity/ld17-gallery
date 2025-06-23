@@ -8,21 +8,12 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 flex flex-col h-full">
-      <h3 className="text-xl font-bold mb-2">{project.projectTitle}</h3>
-      <p className="text-gray-600 mb-2">制作者: {project.studentName}</p>
+      <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+        <span className="text-blue-500">🎮</span>
+        {project.projectTitle}
+      </h3>
+      <p className="text-gray-600 mb-2">{project.studentName}</p>
       <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
-      {project.tags && project.tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="px-2 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
       <div className="flex flex-col gap-2">
         {project.unityroomUrl && (
           <a
