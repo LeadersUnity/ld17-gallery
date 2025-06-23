@@ -14,8 +14,7 @@ function App() {
       return (
         project.projectTitle.toLowerCase().includes(lowerSearchTerm) ||
         project.studentName.toLowerCase().includes(lowerSearchTerm) ||
-        project.description.toLowerCase().includes(lowerSearchTerm) ||
-        (project.tags && project.tags.some((tag) => tag.toLowerCase().includes(lowerSearchTerm)))
+        project.description.toLowerCase().includes(lowerSearchTerm)
       );
     });
   }, [searchTerm]);
