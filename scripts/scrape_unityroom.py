@@ -19,6 +19,7 @@ class UnityroomParser(HTMLParser):
         self.description_text = ""
         self.in_description = False
         self.current_h2 = ""
+        self.in_game_icon_area = False
         
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
@@ -38,25 +39,27 @@ class UnityroomParser(HTMLParser):
         elif tag == 'title':
             self.in_title = True
             
+        elif tag == 'div':
+            # ゲームアイコンエリアの開始を検出
+            if 'class' in attrs_dict and 'bl_gameTitle_iconArea' in attrs_dict['class']:
+                self.in_game_icon_area = True
+            # ゲーム説明文のdivを探す
+            elif self.current_h2 == 'ゲーム紹介':
+                self.in_description = True
+                
         elif tag == 'img':
-            # ゲームアイコンを探す
-            if 'class' in attrs_dict:
-                classes = attrs_dict['class']
-                if 'game-icon' in classes or 'GameIcon' in classes:
-                    self.game_icon_url = attrs_dict.get('src', '')
-            # srcにicon_という文字列が含まれる画像も候補とする
-            src = attrs_dict.get('src', '')
-            if 'icon_' in src and not self.game_icon_url:
-                self.game_icon_url = src
+            # ゲームアイコンエリア内の画像のみを対象とする
+            if self.in_game_icon_area:
+                src = attrs_dict.get('src', '')
+                # no_image_squareなどのプレースホルダー画像は無視
+                if 'no_image' not in src and '/assets/' not in src:
+                    # unityroomのアイコンURLパターンにマッチする場合のみ
+                    if 'os-worker.unityroom.com' in src and 'icon_' in src:
+                        self.game_icon_url = src
                 
         elif tag == 'h2':
             self.current_h2 = ""
             self.in_h2 = True
-            
-        elif tag == 'div':
-            # ゲーム説明文のdivを探す
-            if self.current_h2 == 'ゲーム紹介':
-                self.in_description = True
             
     def handle_data(self, data):
         if hasattr(self, 'in_title') and self.in_title:
@@ -71,8 +74,11 @@ class UnityroomParser(HTMLParser):
             self.in_title = False
         elif tag == 'h2':
             self.in_h2 = False
-        elif tag == 'div' and self.in_description:
-            self.in_description = False
+        elif tag == 'div':
+            if self.in_game_icon_area:
+                self.in_game_icon_area = False
+            elif self.in_description:
+                self.in_description = False
 
 def scrape_unityroom_game(url):
     """unityroomのゲームページから情報を取得"""

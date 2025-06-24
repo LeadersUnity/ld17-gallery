@@ -8,7 +8,6 @@ export const projects: Project[] = [
     description: '',
     unityroomUrl: 'https://unityroom.com/games/gametheory_in_action',
     githubUrl: 'https://github.com/LeadersUnity/original-satotai',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182684/icon_20250617_042225.jpg?h=1750101745',
   },
   {
     id: '2',
@@ -79,7 +78,6 @@ export const projects: Project[] = [
     description: '',
     unityroomUrl: 'https://unityroom.com/games/disedash',
     githubUrl: 'https://github.com/LeadersUnity/original-carly',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182464/icon_20250616_125901.png?h=1750046341',
   },
   {
     id: '10',
@@ -115,7 +113,6 @@ export const projects: Project[] = [
     description: 'spaceキーで死亡A、Dで左右移動↑でジャンプ',
     unityroomUrl: 'https://unityroom.com/games/shunnosukekameda',
     githubUrl: 'https://github.com/LeadersUnity/Original-Max1',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182751/icon_20250617_124545.png?h=1750131945',
   },
   {
     id: '14',
@@ -151,7 +148,6 @@ export const projects: Project[] = [
     description: '',
     unityroomUrl: 'https://unityroom.com/games/glichcore',
     githubUrl: 'https://github.com/LeadersUnity/original-inuryo',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/17194/icon_20201016_215154.png?h=1602852714',
   },
   {
     id: '18',
@@ -169,7 +165,6 @@ export const projects: Project[] = [
     description: '',
     unityroomUrl: 'https://unityroom.com/games/koin-no-kuni-no-alice',
     githubUrl: 'https://github.com/LeadersUnity/original-nikoru',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/30605/icon_20220429_162841.gif?h=1651217321',
   },
   {
     id: '20',
@@ -205,7 +200,6 @@ export const projects: Project[] = [
     description: '突如として“変異体”と化したあなたは、謎の人物ロキによって、今まさに爆発せんとする惑星へと投げ込まれた。残された時間は、わずか数分。この死の星から脱出する唯一の希望は、惑星のどこかに隠された宇宙船を見つけ出すことだ。しかし、TVA（時間変異取締局）の非情な試練はそれだけではない。宇宙船への道は、危険な迷路と化した廃墟、そしてあなたの行く手を阻む未知の敵で満ちている。刻一刻と迫る惑星の崩壊、そして迫りくる脅威をかわしながら、あなたは無事宇宙船を発見し、次の惑星へと旅立つことができるのか？',
     unityroomUrl: 'https://unityroom.com/games/mazeoftime',
     githubUrl: 'https://github.com/LeadersUnity/original-banji-',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/180845/icon_20250611_111409.png?h=1749608049',
   },
   {
     id: '24',
@@ -268,7 +262,6 @@ export const projects: Project[] = [
     description: '警備員の目を掻い潜って結晶を盗み持ち帰るゲームです。',
     unityroomUrl: 'https://unityroom.com/games/stoling_crystal',
     githubUrl: 'https://github.com/LeadersUnity/original-pinshy',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182476/icon_20250616_133514.png?h=1750048514',
   },
   {
     id: '31',
