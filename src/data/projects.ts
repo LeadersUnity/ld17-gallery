@@ -83,7 +83,7 @@ export const projects: Project[] = [
     id: '10',
     studentName: 'しば',
     projectTitle: 'Duo Escape',
-    description: 'モンスターの声は自分の声です。',
+    description: '二つの肉体を交互に取り憑きながら脱出するホラーゲームです。館の中には"何か"がいるから気をつけて...!脱出には三つの鍵が必要です。早く外に。',
     unityroomUrl: 'https://unityroom.com/games/shiba1',
     githubUrl: 'https://github.com/LeadersUnity/original_shiba',
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182833/icon_20250617_172326.png?h=1750148606',
@@ -99,6 +99,14 @@ export const projects: Project[] = [
   },
   {
     id: '12',
+    studentName: 'てふ',
+    projectTitle: 'Sound Sight',
+    description: '',
+    githubReleaseUrl: 'https://github.com/LeadersUnity/original-tefu/releases',
+    githubUrl: 'https://github.com/LeadersUnity/original-tefu',
+  },
+  {
+    id: '13',
     studentName: 'やくお',
     projectTitle: 'Shadow Runner',
     description: '光に当たると死亡するゲーム',
@@ -107,7 +115,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182572/icon_20250616_191032.png?h=1750068632',
   },
   {
-    id: '13',
+    id: '14',
     studentName: 'マックス',
     projectTitle: 'THROUGH BY YOURSELF',
     description: 'spaceキーで死亡A、Dで左右移動↑でジャンプ',
@@ -115,7 +123,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/LeadersUnity/Original-Max1',
   },
   {
-    id: '14',
+    id: '15',
     studentName: 'よしひこ',
     projectTitle: 'What a Shot!!',
     description: 'β版チュートリアルはできます。ステージ作りはできますが、プレイがまだできないのでしばしお待ちを...',
@@ -124,7 +132,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182342/icon_20250616_185802.png?h=1750067882',
   },
   {
-    id: '15',
+    id: '16',
     studentName: 'でんたく',
     projectTitle: 'ふまにゃいで！ - ねこ回避ゲーム',
     description: '🎮 ふまにゃいで！ 🐾レーンを移動して、次々に迫るねこたちを華麗に避けろ！ねこにぶつかると ライフ🩷が1つ減少…！タイミングよく移動＆アイテムを使って、生き残れ！▼',
@@ -133,7 +141,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182639/icon_20250617_011221.png?h=1750090341',
   },
   {
-    id: '16',
+    id: '17',
     studentName: 'たーとる',
     projectTitle: '絶対に定時配達カンパニー',
     description: '2D配達シミュレーションゲームです！もし不具合や気になった点があれば、なんでもご連絡ください！⚠️PC以外の環境では、うまく動作しない可能性があります！ご了承ください。',
@@ -142,7 +150,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182069/icon_20250619_231721.png?h=1750342641',
   },
   {
-    id: '17',
+    id: '18',
     studentName: 'いぬりょう',
     projectTitle: 'アームブレイカー!?',
     description: '',
@@ -150,7 +158,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/LeadersUnity/original-inuryo',
   },
   {
-    id: '18',
+    id: '19',
     studentName: 'ようきん',
     projectTitle: 'ぼくのにっき',
     description: '小学生の４ページの日記がゲームの舞台。ー“ぼく”と”ユウちゃん”の二人の物語ー手書きの世界でどんな結末を迎えるのか。',
@@ -159,7 +167,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182534/icon_20250616_183108.PNG?h=1750066268',
   },
   {
-    id: '19',
+    id: '20',
     studentName: 'にこる',
     projectTitle: '光陰の国のアリス',
     description: '',
@@ -167,7 +175,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/LeadersUnity/original-nikoru',
   },
   {
-    id: '20',
+    id: '21',
     studentName: 'ななぴ',
     projectTitle: 'ツカマエッコ',
     description: 'あなたの住む街にたくさんのコインが散りばめられた!?お化けから逃げながらライバルよりもより多くのコインを集めよう！・ゲームルールキャラクターはプレイヤー、ライバル、敵（お化け）がいます。プレイヤーを操作してライバルよりも多くのコインを獲得したら勝ちです。お化けに触れたらコインの枚数が3枚減り、宝箱に触れるとコインの枚数が2枚増えます。',
@@ -176,7 +184,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182698/icon_20250617_142818.png?h=1750138098',
   },
   {
-    id: '21',
+    id: '22',
     studentName: 'へぶん',
     projectTitle: 'BOOMTECT',
     description: '様々なアビリティを使って建物を壊す爽快破壊シミュレーションゲームです！',
@@ -185,7 +193,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182668/icon_20250617_024747.png?h=1750096067',
   },
   {
-    id: '22',
+    id: '23',
     studentName: 'ねぎ',
     projectTitle: '図書館バイト',
     description: '本をたくさん返してハイスコアを目指すゲームです！',
@@ -194,7 +202,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182576/icon_20250616_195648.png?h=1750071408',
   },
   {
-    id: '23',
+    id: '24',
     studentName: 'ばんじー',
     projectTitle: 'Time Of Maze',
     description: '突如として“変異体”と化したあなたは、謎の人物ロキによって、今まさに爆発せんとする惑星へと投げ込まれた。残された時間は、わずか数分。この死の星から脱出する唯一の希望は、惑星のどこかに隠された宇宙船を見つけ出すことだ。しかし、TVA（時間変異取締局）の非情な試練はそれだけではない。宇宙船への道は、危険な迷路と化した廃墟、そしてあなたの行く手を阻む未知の敵で満ちている。刻一刻と迫る惑星の崩壊、そして迫りくる脅威をかわしながら、あなたは無事宇宙船を発見し、次の惑星へと旅立つことができるのか？',
@@ -202,7 +210,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/LeadersUnity/original-banji-',
   },
   {
-    id: '24',
+    id: '25',
     studentName: 'なち',
     projectTitle: 'my museum',
     description: 'オークションに参加して名画を手に入れ、あなたの美術館を作りましょう！',
@@ -211,7 +219,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/183030/icon_20250620_140542.jpg?h=1750395942',
   },
   {
-    id: '25',
+    id: '26',
     studentName: 'らいらい',
     projectTitle: '激アツ!!サウナ効能戦闘オンライン',
     description: 'サウナ × カードアクション「あの人より先に出たくない......」サウナに入れば誰もが思う気持ちをゲームに‼︎自分より相手を先に帰らせろ‼︎意地をかけた頭脳派カードアクションオンラインゲーム‼︎',
@@ -220,7 +228,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/183170/icon_20250620_133526.jpg?h=1750394126',
   },
   {
-    id: '26',
+    id: '27',
     studentName: 'けいてぃ',
     projectTitle: '5秒世界',
     description: '5秒間で館の構造やギミックを記憶し、暗闇の中を進む記憶探索脱出ゲーム。鍵をみつけて、脱出口まで辿り着こう。WASD : 移動Space : ギミック使用Spcae(長押し) : リスタート絵画 :ワープする棚 : 隠し扉蝋燭 : 5秒だけ全体を照らす(一回きり！)',
@@ -229,7 +237,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/183065/icon_20250622_230311.png?h=1750600991',
   },
   {
-    id: '27',
+    id: '28',
     studentName: 'もりりん',
     projectTitle: '光の円環を護る術者',
     description: 'ワンクリック操作で、簡単操作!!',
@@ -238,7 +246,15 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182898/icon_20250617_200902.png?h=1750158542',
   },
   {
-    id: '28',
+    id: '29',
+    studentName: 'ヒマスター',
+    projectTitle: 'WarpRabbit!',
+    description: '星を辿ってゲームを進行させてください',
+    unityroomUrl: 'https://unityroom.com/games/232589355ee',
+    githubUrl: 'https://github.com/LeadersUnity/original-himastar',
+  },
+  {
+    id: '30',
     studentName: 'そそ',
     projectTitle: 'ケシってとばせ！',
     description: '消しゴムバトルの拡張版！？ためて！とんで！吹っ飛ばせ！',
@@ -247,7 +263,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182866/icon_20250620_155909.jpg?h=1750402749',
   },
   {
-    id: '29',
+    id: '31',
     studentName: 'ひさーめ',
     projectTitle: '水たまりうむ',
     description: '夢の中のような現実のような不思議な世界で水たまりを使って子供のような純粋な気持ちで挑むパズルアドベンチャー',
@@ -256,7 +272,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182731/icon_20250620_071507.png?h=1750371307',
   },
   {
-    id: '30',
+    id: '32',
     studentName: 'ぴんしー',
     projectTitle: '暗証番号を思い出し隠された赤の結晶を盗め！',
     description: '警備員の目を掻い潜って結晶を盗み持ち帰るゲームです。',
@@ -264,7 +280,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/LeadersUnity/original-pinshy',
   },
   {
-    id: '31',
+    id: '33',
     studentName: 'えむたに',
     projectTitle: '破壊神アカデミー',
     description: '破壊神になりきって、破壊しまくるゲーム。ストレス発散してください！',
@@ -273,7 +289,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/183114/icon_20250623_134538.png?h=1750653938',
   },
   {
-    id: '32',
+    id: '34',
     studentName: 'ヤンキース',
     projectTitle: 'SNSクリーンアップ',
     description: 'SNSの管理者となって不適切な投稿を仕分けしていくゲーム他のプレイヤーがどういった判断をしているか確認することができます．操作：WASDキー',
@@ -282,7 +298,7 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182875/icon_20250620_001010.jpg?h=1750345810',
   },
   {
-    id: '33',
+    id: '35',
     studentName: 'まるまる',
     projectTitle: 'ホールマスター',
     description: 'ファミレスのホールの仕事をゲームにしてみました。UI等は後々修正します。',
@@ -291,10 +307,10 @@ export const projects: Project[] = [
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182851/icon_20250617_180319.png?h=1750150999',
   },
   {
-    id: '34',
+    id: '36',
     studentName: 'ロバート',
-    projectTitle: '水泳ホラー',
-    description: '',
+    projectTitle: 'SilentStroke',
+    description: '水泳選手を題材にした1人称アドベンチャー×ホラーゲームです！',
     unityroomUrl: 'https://unityroom.com/games/silentstroke',
     githubUrl: 'https://github.com/LeadersUnity/original_robert',
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/183205/icon_20250618_211204.jpg?h=1750248724',
