@@ -289,5 +289,14 @@ export const projects: Project[] = [
     unityroomUrl: 'https://unityroom.com/games/hall-master',
     githubUrl: 'https://github.com/LeadersUnity/original-marumaru',
     thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182851/icon_20250617_180319.png?h=1750150999',
+  },
+  {
+    id: '34',
+    studentName: 'ロバート',
+    projectTitle: '水泳ホラー',
+    description: '',
+    unityroomUrl: 'https://unityroom.com/games/silentstroke',
+    githubUrl: 'https://github.com/LeadersUnity/original_robert',
+    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/183205/icon_20250618_211204.jpg?h=1750248724',
   }
 ];
