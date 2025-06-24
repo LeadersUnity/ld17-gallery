@@ -9,19 +9,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col h-full">
       <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
-        {project.thumbnail ? (
-          <img 
-            src={project.thumbnail} 
-            alt={project.projectTitle}
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              e.currentTarget.parentElement!.innerHTML = '<span class="text-6xl">🎮</span>';
-            }}
-          />
-        ) : (
-          <span className="text-6xl">🎮</span>
-        )}
+        <img 
+          src={project.thumbnail || `${import.meta.env.BASE_URL}no_image_yoko.jpg`} 
+          alt={project.projectTitle}
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            e.currentTarget.src = `${import.meta.env.BASE_URL}no_image_yoko.jpg`;
+          }}
+        />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold mb-2">
