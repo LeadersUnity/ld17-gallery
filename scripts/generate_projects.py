@@ -86,6 +86,26 @@ def generate_typescript_data():
     
     return projects
 
+def apply_manual_overrides(projects):
+    """手動修正内容を適用"""
+    try:
+        with open('scripts/manual_overrides.json', 'r', encoding='utf-8') as f:
+            overrides = json.load(f)
+        
+        for project in projects:
+            student_name = project['studentName']
+            if student_name in overrides:
+                # オーバーライドの内容を適用
+                for key, value in overrides[student_name].items():
+                    project[key] = value
+                print(f"手動修正を適用: {student_name} - {overrides[student_name]}")
+    except FileNotFoundError:
+        print("manual_overrides.jsonが見つかりません。手動修正をスキップします。")
+    except json.JSONDecodeError:
+        print("manual_overrides.jsonの形式が不正です。手動修正をスキップします。")
+    
+    return projects
+
 def format_typescript_code(projects):
     """TypeScriptコードとしてフォーマット"""
     output = "import { Project } from '../types';\n\n"
@@ -118,6 +138,10 @@ def format_typescript_code(projects):
 
 if __name__ == '__main__':
     projects = generate_typescript_data()
+    
+    # 手動修正を適用
+    projects = apply_manual_overrides(projects)
+    
     typescript_code = format_typescript_code(projects)
     
     # ファイルに出力

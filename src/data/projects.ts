@@ -169,7 +169,7 @@ export const projects: Project[] = [
     description: '',
     unityroomUrl: 'https://unityroom.com/games/koin-no-kuni-no-alice',
     githubUrl: 'https://github.com/LeadersUnity/original-nikoru',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/156080/icon_20250402_190946.png?h=1743588586',
+    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/30605/icon_20220429_162841.gif?h=1651217321',
   },
   {
     id: '20',
@@ -183,11 +183,11 @@ export const projects: Project[] = [
   {
     id: '21',
     studentName: 'へぶん',
-    projectTitle: 'Gametheory in Action',
-    description: '',
-    unityroomUrl: 'https://unityroom.com/games/gametheory_in_action',
+    projectTitle: 'BOOMTECT',
+    description: '様々なアビリティを使って建物を壊す爽快破壊シミュレーションゲームです！',
+    unityroomUrl: 'https://unityroom.com/games/boomtect',
     githubUrl: 'https://github.com/LeadersUnity/original-heaven',
-    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182684/icon_20250617_042225.jpg?h=1750101745',
+    thumbnail: 'https://os-worker.unityroom.com/unityroom_production/icon/182668/icon_20250617_024747.png?h=1750096067',
   },
   {
     id: '22',
